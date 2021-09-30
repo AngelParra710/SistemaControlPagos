@@ -1,0 +1,99 @@
+/* CARDS DE REPORTES */
+
+:root{
+    --colorBlackTransparent: rgba(33, 46, 61, 0.897);
+    --colorBlack: #1C110A;
+    --colorGreen: #06D6A0;
+    --colorPink: hsl(346, 84%, 61%);
+    --blueDark: #323439;
+    --blueTransparent: #118ab246;
+    --colorYellow: #FFD166;
+}
+.dashboard{
+    width: 96%;
+    height: 250px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.cards{
+    width: 30%;
+    height: 100%;
+    border-radius: 10PX;
+    background-color: var(--blueDark);
+    position: relative;
+    overflow: hidden;
+}
+.Entradas{
+    text-align: center;
+    font-size: 30px;
+    color: var(--colorYellow);
+}
+.totalentradas{
+    color: white;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 40px;
+    margin-top: 100px;
+}
+.monto{
+    display: flex;
+}
+.icon{
+    position: absolute;
+    bottom: 0;
+    right: -10px; 
+    background-color: var(--colorPink);
+    border-radius: 40px 0px 0px 40px; 
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    padding-top: 25px;
+}
+@media screen and (max-width:1300px){
+    .totalentradas{
+        color: white;
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:770px){
+    .totalentradas{
+        color: white;
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:710px){
+    .dashboard{
+        width: 96%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
+        width: 90%;
+        margin: 10px auto;
+        border-radius: 10PX;
+        background-color: var(--blueDark);
+        position: relative;
+        overflow: hidden;
+    }
+    .icon{
+        width: 90px;
+        height: 90px;
+        border-radius: 20px 0px 0px 20px; 
+    }
+}
+@media screen and (max-width: 300px) {
+    .totalentradas{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+}
